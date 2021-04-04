@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        ssh_private_key = credentials('ssh_private_key')
-    }
     stages {
         stage('git clone') {
             steps {
@@ -11,7 +8,7 @@ pipeline {
         }
         stage('ansible playbook') {
             steps {        
-              sh "ansible-playbook ansible.yml -vvv"
+              sh "ansible-playbook -i inventory ansible.yml -vvv"
             }
         }
     }   
