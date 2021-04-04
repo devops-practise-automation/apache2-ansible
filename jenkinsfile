@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    environment {
+        ssh_private_key = credentials('ssh_private_key')
+    }
+    stages {
+        stage('git clone') {
+            steps {
+              git branch: 'main', url: "https://github.com/ramesh-DevOps/apache2-ansible.git"
+            }
+        }
+        stage('ansible playbook') {
+            steps {        
+              sh "ansible-playbook ansible.yml -vvv"
+            }
+        }
+    }   
+}
