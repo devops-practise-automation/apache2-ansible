@@ -1,6 +1,5 @@
 - hosts: 172.31.30.111
   gather_facts: true
-  become: yes
   tasks:
   - name: install apache2
     apt: 
