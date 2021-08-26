@@ -1,1 +1,1 @@
-web01 ansible_ssh_host=3.86.27.72 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=./key_file.pem  
+web01 ansible_ssh_host=172.31.89.106 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=./key_file.pem  
