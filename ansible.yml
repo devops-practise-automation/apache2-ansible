@@ -1,4 +1,4 @@
-- hosts: 3.86.27.72
+- hosts: web01
   gather_facts: false
   become: true
   tasks:
