@@ -1,4 +1,4 @@
-- hosts: server1
+- hosts: 172.31.89.106
   gather_facts: true
   become: true
   tasks:
