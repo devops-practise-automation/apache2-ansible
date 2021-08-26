@@ -1,5 +1,4 @@
 - hosts: web01
-  gather_facts: false
   become: true
   tasks:
   - name: install apache2
