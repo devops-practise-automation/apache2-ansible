@@ -1,4 +1,4 @@
-- hosts: web01
+- hosts: web
   become: true
   tasks:
   - name: install apache2
