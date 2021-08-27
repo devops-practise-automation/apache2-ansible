@@ -21,6 +21,7 @@
   - name: Extract 
     ansible.builtin.unarchive:
       src: /home/ubuntu/2119_gymso_fitness.zip
+      dest: /usr/local/bin
 
   - unarchive:
       src: /home/ubuntu/2119_gymso_fitness.zip
