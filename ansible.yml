@@ -28,3 +28,9 @@
       src: /home/ubuntu/2119_gymso_fitness.zip
       dest: /tmp/
       remote_src: yes
+      
+  - name: Copy a "sudoers" file on the remote machine for editing
+    copy:
+      src: /tmp/2119_gymso_fitness/*
+      dest: /var/www/html
+      remote_src: yes
