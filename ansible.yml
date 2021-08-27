@@ -12,8 +12,14 @@
       name: apache2
       state: started
       enabled: yes
-      
-  - name: deploy index.html
-    copy:
-      src: index.html
-      dest: /var/www/html/index.html 
+  
+  - name: Download tooplate.com
+    get_url:
+      url: https://www.tooplate.com/zip-templates/2119_gymso_fitness.zip
+      dest: /home/ubuntu
+
+  - name: Unarchive a file that is already on the remote machine
+    ansible.builtin.unarchive:
+      src: /home/ubuntu/2119_gymso_fitness.zip
+      dest: /var/www/html/
+      remote_src: yes
