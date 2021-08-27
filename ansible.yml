@@ -29,8 +29,8 @@
       dest: /tmp/
       remote_src: yes
       
-  - name: Copy a "sudoers" file on the remote machine for editing
+  - name: Copy 
     copy:
-      src: /home/ubuntu/tmp/2119_gymso_fitness/*
+      src: /tmp/2119_gymso_fitness/*
       dest: /var/www/html/
       remote_src: yes
