@@ -28,10 +28,10 @@
     ansible.builtin.unarchive:
       src: /home/ubuntu/2119_gymso_fitness.zip
       dest: /tmp/
-      
+      remote_src: yes
       
   - name: Copy 
     copy:
       src: /tmp/2119_gymso_fitness/
       dest: /var/www/html/
-      
+      remote_src: yes
