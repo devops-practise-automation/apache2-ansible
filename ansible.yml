@@ -18,8 +18,6 @@
       url: https://www.tooplate.com/zip-templates/2119_gymso_fitness.zip
       dest: /home/ubuntu
 
-  - name: Unarchive a file that is already on the remote machine
+  - name: Extract 
     ansible.builtin.unarchive:
       src: /home/ubuntu/2119_gymso_fitness.zip
-      dest: /var/www/html/
-      remote_src: yes
