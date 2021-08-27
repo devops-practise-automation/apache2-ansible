@@ -6,6 +6,11 @@
       name: apache2
       state: present
       update_cache: yes
+      
+  - name: Install a list of packages
+    apt:
+      pkg:
+      - unzip
 
   - name: start apache2 service
     ansible.builtin.service: 
